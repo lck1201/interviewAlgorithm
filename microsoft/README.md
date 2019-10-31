@@ -1,34 +1,8 @@
 # 微软面试
 
-<details>
-
-<summary>目录</summary>
-
-- [微软面试](#%e5%be%ae%e8%bd%af%e9%9d%a2%e8%af%95)
-  - [一般流程](#%e4%b8%80%e8%88%ac%e6%b5%81%e7%a8%8b)
-  - [算法题](#%e7%ae%97%e6%b3%95%e9%a2%98)
-    - [数学](#%e6%95%b0%e5%ad%a6)
-    - [字符串处理](#%e5%ad%97%e7%ac%a6%e4%b8%b2%e5%a4%84%e7%90%86)
-    - [二分查找](#%e4%ba%8c%e5%88%86%e6%9f%a5%e6%89%be)
-    - [并查集](#%e5%b9%b6%e6%9f%a5%e9%9b%86)
-    - [maxStack](#maxstack)
-    - [树](#%e6%a0%91)
-    - [动态规划](#%e5%8a%a8%e6%80%81%e8%a7%84%e5%88%92)
-    - [贪心](#%e8%b4%aa%e5%bf%83)
-    - [√two pointers](#%e2%88%9atwo-pointers)
-    - [大数据](#大数据)
-  - [逻辑题](#%e9%80%bb%e8%be%91%e9%a2%98)
-    - [√ 概率题（用少表示多并均匀）](#%e2%88%9a-%e6%a6%82%e7%8e%87%e9%a2%98%e7%94%a8%e5%b0%91%e8%a1%a8%e7%a4%ba%e5%a4%9a%e5%b9%b6%e5%9d%87%e5%8c%80)
-    - [√ 凸包问题](#%e2%88%9a-%e5%87%b8%e5%8c%85%e9%97%ae%e9%a2%98)
-      - [求包裹所有点的凸多边形](#%e6%b1%82%e5%8c%85%e8%a3%b9%e6%89%80%e6%9c%89%e7%82%b9%e7%9a%84%e5%87%b8%e5%a4%9a%e8%be%b9%e5%bd%a2)
-  - [软技能(行为面试)](#%e8%bd%af%e6%8a%80%e8%83%bd%e8%a1%8c%e4%b8%ba%e9%9d%a2%e8%af%95)
-</details>
-
 ## 算法题
 
 不难，**交流很重要，要互动inplace or not，树里面有没有负数！！！**注重**代码质量（编程风格、命名规范、异常值处理）**。各种**follow up**以及要你设计尽可能多的**测试用例**。
-
-补充，外企高频算法题[https://zhuanlan.zhihu.com/p/21474308](https://zhuanlan.zhihu.com/p/21474308)
 
 ### 数学
 * **高频题**
@@ -128,6 +102,7 @@ dfs(1)
       * [讲解1](https://www.jianshu.com/p/f540a428d190)，[讲解二](https://blog.csdn.net/wangruitao1991/article/details/51678815)
 * 数组中的第k大的数。思路：用最小堆。时间复杂度：O(K) + O(log(N-K))
 
+
 ### 字符串处理
 
 * 字母和数字的映射问题：给定一个字母和数字的映射关系，如 1-26 对应a-z，然后输入一个数字型的字符串如“123”，请输出所有可能的字母型字符串，“abc”和“aw”和”lc”。Leetcode91，剑指offer也有，但leetcode这个解法更好。
@@ -175,6 +150,7 @@ else: dpTable[i][j] = max(dpTable[i - 1][j], dpTable[i][j - 1])
 <del>* 给 定两个字符串S1 S2，如果f\(S1.substring\)=S2.substring，且 f: 改变字符串中的一个字符。请找出所有的S1.substring edit distance?</del>
 * [最长回文子串](https://legacy.gitbook.com/book/lbgzmhl/microsoft-suzhou-interview/edit#)
 * 输入一个char 与 str，要求把str中所有的"ab"都替换成"c"，把所有单个的"b"都替换成"ef"。要求in-place，并且保证str中"ab"的个数 &gt;"b"的个数（也就是str的长度足够放下替换后的结果）A：遍历多次可解，但问清楚替换后出现的空格怎么处理。需要问清时间复杂度。
+
 
 ### 二分查找
 
@@ -319,6 +295,7 @@ else: dpTable[i][j] = max(dpTable[i - 1][j], dpTable[i][j - 1])
 * [十亿数排序](https://legacy.gitbook.com/book/lbgzmhl/microsoft-suzhou-interview/edit#) [总结](https://legacy.gitbook.com/book/lbgzmhl/microsoft-suzhou-interview/edit#)
 * 拓扑结构
 
+
 ## 逻辑题
 
 ### √ 概率题（用少表示多并均匀）
@@ -364,7 +341,11 @@ else: dpTable[i][j] = max(dpTable[i - 1][j], dpTable[i][j - 1])
 
 
 ## 补充
-## **微软十五道面试题**
+
+### 外企高频算法题
+[https://zhuanlan.zhihu.com/p/21474308](https://zhuanlan.zhihu.com/p/21474308)
+
+### **微软十五道面试题**
 
 1. 有一个整数数组，请求出两两之差绝对值最小的值。 记住，只要得出最小值即可，不需要求出是哪两个数。
 
