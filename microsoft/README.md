@@ -313,7 +313,7 @@ else: dpTable[i][j] = max(dpTable[i - 1][j], dpTable[i][j - 1])
   * 步骤：1.将点集里面的所有点两两配对，组成 n\(n-1\)/2 条直线。2.对于每条直线，再检查剩余的n-2个点是否在直线的同一侧。
   * 结果为正时则\($$x_3, y_3$$\)在直线左侧，为负在右侧
 
-![&#x4E09;&#x70B9;&#x8DDD;&#x79BB;&#x516C;&#x5F0F;](.gitbook/assets/image%20%289%29.png)
+![&#x4E09;&#x70B9;&#x8DDD;&#x79BB;&#x516C;&#x5F0F;](https://github.com/muhualing/coding-interview-chinese/raw/master/microsoft/.gitbook/assets/image%20%289%29.png)
 
 * 分治法O\(nlogn\)
   * 思路：找到凸包点，分割点集，在子点集上继续找凸包点
